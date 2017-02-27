@@ -1,0 +1,69 @@
+/******************************/
+/*
+   site: www.rltx.com
+version: 2017-02-23
+ author: kaxiaoche
+  email: kaxiaoche@163.com
+*/
+/******************************/
+
+$UIColor: #f48400 !default;
+$UILightColor: lighten($UIColor, 5%) !default;
+$UIDarkColor: darken($UIColor, 5%) !default;
+
+%songTi {
+	font-family: simsun;
+}
+
+%transYHalf {
+	-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+%transparent {
+	opacity: 0;
+	filter:Alpha(opacity=0);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+html, body {
+	font-size: 62.5%;
+}
+
+body, div, p, h1, h2, h3, h4, h5, h6, hr, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.btn-primary {
+	background-color: $UIColor;
+	border-color: $UIDarkColor;
+}
+
+.btn-primary:hover {
+	background-color: $UILightColor;
+	border-color: $UIColor;
+	color: #fff;
+}
+
+.pr {
+	position: relative;
+}
+
+.pa {
+	position: absolute;
+}
+
+.transparent {
+	@extend %transparent;
+}
+
