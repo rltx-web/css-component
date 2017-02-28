@@ -19,10 +19,10 @@ version: 2017-02-23
 
 .img-slider .sli-pre, .img-slider .sli-next {
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-   -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-       transform: translateY(-50%); }
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .transparent {
   opacity: 0;
