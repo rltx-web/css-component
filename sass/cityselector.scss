@@ -1,0 +1,101 @@
+/******************************/
+/*
+   site: www.rltx.com
+version: 2017-02-23
+ author: kaxiaoche
+  email: kaxiaoche@163.com
+*/
+/******************************/
+
+@import "reset"; //引入重写部分基础样式
+
+.city-selector {
+  position: absolute;
+  width: 330px;
+  height: 164px;
+  background-color: #fff;
+  color: #464646;
+  border: solid 1px #ddd;
+  box-shadow: 2px 2px 10px 2px #ddd;
+  .cs-tabs {
+    font-size: 0;
+    border-bottom: solid 2px $UIColor;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 18px;
+      height: 28px;
+      line-height: 30px;
+      font-size: 12px;
+      overflow: hidden;
+    }
+    .active {
+      background-color: $UIColor;
+      color: #fff;
+      cursor: pointer;
+    }
+    .disabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.cs-box {
+  position: relative;
+  padding: 10px;
+  .cs-list {
+    font-size: 0;
+    padding: 0 25px;
+    height: 108px;
+    overflow: hidden;
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30%;
+      text-align: center;
+      font-size: 12px;
+      padding: 3px 0;
+      margin: 2px 1.6%;
+      border-radius: 3px;
+      cursor: pointer;
+      &:hover {
+        background-color: $UIColor;
+        color: #fff;
+      }
+    }
+  }
+  .cs-pre, .cs-next {
+    position: absolute;
+    top: 50%;
+    @extend %transYHalf;
+    width: 20px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 18px;
+    text-align: center;
+    @extend %songTi;
+    background-color: #f8f8f8;
+    border: solid 1px #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+      background-color: $UIColor;
+      color: #fff;
+      border-color: $UIColor;
+    }
+  }
+  .cs-pre {
+    left: 10px;
+  }
+  .cs-next {
+    right: 10px;
+  }
+  .disabled, .disabled:hover {
+    background-color: #f8f8f8;
+    color: #464646;
+    border-color: #eee;
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}
