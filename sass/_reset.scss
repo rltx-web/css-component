@@ -16,7 +16,6 @@ $UIDarkColor: darken($UIColor, 5%) !default;
 }
 
 %transYHalf {
-	-webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
