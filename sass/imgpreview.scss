@@ -1,0 +1,86 @@
+/******************************/
+/*
+   site: www.rltx.com
+version: 2017-02-23
+ author: kaxiaoche
+  email: kaxiaoche@163.com
+*/
+/******************************/
+
+@import "reset"; //引入重写部分基础样式
+
+.img-slider {
+  .sli-pre, .sli-next {
+    position: absolute;
+    top: 50%;
+    @extend %transYHalf;
+    background-color: #000;
+    opacity: .2;
+    color: #fff;
+    padding: 10px 4px;
+    font-size: 24px;
+    @extend %songTi;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  .sli-pre {
+    left: 0;
+  }
+  .sli-next {
+    right: 0;
+  }
+}
+
+.slider, .album {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-list, .album-list {
+    font-size: 0;
+    white-space: nowrap;
+    text-align: center;
+    li, a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        img {
+          min-width: 100%;
+          min-height: 100%;
+          max-width: 100%;
+          max-height: 100%;
+        }
+    }
+  }
+
+.album {
+  li {
+  width: 16.6666%;
+  padding: 5px;
+  border: solid 2px #fff;
+  }
+  .active {
+  border-color: $UIColor;
+  }
+  .sli-pre, .sli-next {
+    font-size: 18px;
+    padding: 5px 2px;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+

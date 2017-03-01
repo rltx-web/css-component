@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>图片上传预览控件</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- imgView CSS -->
+    <link rel="stylesheet" href="dist/css/imgpreview.min.css">
+  </head>
+  <body>
+    
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#imgPreview">
+    添加附件
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imgPreview" tabindex="-1" role="dialog" aria-labelledby="imgPreviewLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="imgPreviewLabel">图片上传预览控件</h4>
+        </div>
+        <div class="modal-body">
+          <!-- S: imgslider -->
+          <div class="img-slider">
+            <!-- slider -->
+            <div class="slider">
+              <ul class="slider-list">
+                <li class="active"><a href=""><img src="dist/img/cb1.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb2.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb3.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb4.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb5.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb6.jpg" alt=""></a></li>
+              </ul>
+              <span class="sli-pre" title="上一张">&lt;</span>
+              <span class="sli-next" title="下一张">&gt;</span>
+            </div>
+            <!-- album -->
+            <div class="album">
+              <ul class="album-list">
+                <li class="active"><a href=""><img src="dist/img/cb1.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb2.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb3.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb4.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb5.jpg" alt=""></a></li>
+                <li><a href=""><img src="dist/img/cb6.jpg" alt=""></a></li>
+              </ul>
+              <span class="sli-pre" title="上一张">&lt;</span>
+              <span class="sli-next" title="下一张">&gt;</span>
+            </div>
+          </div>
+          <!-- E: imgslider -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-default">删除</button>
+          <button type="button" class="btn btn-info pr">
+          <input type="file" name="" id="" class="transparent pa">
+          添加
+          </button>
+          <button type="button" class="btn btn-primary">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <!-- <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.slim.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"
+  integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  crossorigin="anonymous"></script>
+  <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
